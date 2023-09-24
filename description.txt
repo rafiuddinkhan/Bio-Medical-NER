@@ -1,0 +1,24 @@
+OPENAI_API_KEY="sk-xDZMdJSFmLXXXXXXXX"
+
+create virual env:
+python3 -m venv .bio_medical_ner_env    
+
+Install the requirements
+
+pip freeze > requirements.txt 
+
+-->requirements.txt
+
+langchain
+python-dotenv
+openai
+Flask
+
+For Docker:
+1. Install docker
+2. Create Dockerfile
+3. docker build -t bio_medical_ner .
+4. docker run -it -p 5000:5000 bio_medical_ner
+  
+
+
